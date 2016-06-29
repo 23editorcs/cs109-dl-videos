@@ -10,7 +10,27 @@ This is a basic shell script that downloads all the lecture/section videos assoc
 
 Usage
 ---
-  
+
+## 2015
+
+`hd-2015-video-files.txt` file contains links to both presenter and presentaion
+videos. They are HD and without captions. Lectures will have meaningful
+filenames after download. To download:
+
+```
+cat hd-2015-video-files.txt | ./get-2015.sh
+```
+
+If you want SD/Mobile/HD-Captions videos, you need to put the links from
+CS109 Data Science videos page into `hg-2015-video-pages.txt` file and
+extract video links again:`
+
+```
+cat hd-2015-video-pages.txt | ./extract-2015.py > hd-video-files-2015.txt
+```
+
+## 2014
+
 ```
 ./get.sh hq-urls.txt # for high quality versions
 ```
