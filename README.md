@@ -28,6 +28,8 @@ extract video links again:`
 ```
 cat hd-2015-video-pages.txt | ./extract-2015.py > hd-video-files-2015.txt
 ```
+For Ubuntu, I think it needs to install ChromeDriver. I followed this guide and it worked:
+https://christopher.su/2015/selenium-chromedriver-ubuntu/
 
 ## 2014
 
